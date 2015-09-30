@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menu">Main Menu</string>
+    <string name="welcome">Welcome To \n Avalon Narrator</string>
+    <string name="setup">Choose Roles</string>
+    <string name="done_reading">Read Instructions</string>
+    <string name="game_directions">How to Play</string>
+    <string name="next">Continue</string>
+    <string name="listen">Please Listen</string>
+    <string name="change_setup">Change Roles</string>
+    <string name="same_setup">Play Again</string>
+    <string name="directions">Game Directions</string>
+    <string name="skip">Go To Game Setup</string>
+    <string name="BeginnerOptions">Character Explanations</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="in_game">Included</string>
+    <string name="not_in_game">Omitted</string>
+    <string name="merlinLabel">Merlin</string>
+    <string name="percivalLabel">Percival</string>
+    <string name="mordredLabel">Mordred</string>
+    <string name="morganaLabel">Morgana</string>
+    <string name="oberonLabel">Oberon</string>
+    <string name="assassinLabel">Assassin</string>
+    <string name="lancelot1Label">Lancelot (Rule 1)</string>
+    <string name="lancelot2Label">Lancelot (Rule 2)</string>
+    <string name="pauseValue">Pause Time</string>
+    <string name="lancelots">Lancelot</string>
+    <string name="showMore">Tell Me More</string>
+    <string name="showLess">Ok I\'m Good</string>
+    <string name="merlinRules">Merlin is one of the good team\'s greatest assets.  Before the game begins, Merlin gets to see the bad guys
+        (with the exception of Mordred if he is in play).  This allows him to steer the good team in the right direction.  Whether it be through
+        casual conversational hints, the missions he picks, or the way he votes, Merlin can help secure victory for the loyal servants of Arthur.
+        He must be careful however, if the good team wins the game, the bad team has one chance to guess who Merlin is; if they guess correctly,
+        the bad team wins the game.  A skillful Merlin can help his team while remaining undetected.</string>
+    <string name="percivalRules">Percival is also a powerful asset for the good team.  During the game setup, Percival learns the identity of Merlin
+        (unless Morgana is in play, in which case he sees two people; one is Merlin and the other is Morgana).  This gives him a considerable
+        advantage in discerning who the bad guys are.  By listening to Merlin\'s hints, he can help the good team succeed missions.  In addition,
+        Percival can pose himself as Merlin, and draw attention away from him.  This can be vital in the end-game phase when the bad guys attempt to
+        guess who Merlin is; if they guess incorrectly, the good guys still win.  Be wary in games that include Morgana.  Morgana knows who the bad
+        guys are, so she can provide just as good information as Merlin, however she may just as easily lead you astray.  Figuring out who is the
+        real Merlin must be done with care to play a successful Percival. </string>
+    <string name="assassinRules">Assassin is the direct counter to Merlin, and should be used in every game that includes Merlin.  As mentioned in the
+        Merlin explanation, if the good team wins with Merlin and Assassin in play, the Assassin is allowed to guess who Merlin is.  If the Assassin\'s guess
+        is correct, the bad team wins the game.  More often than not, Assassin is an assumed role, so the card need not be played.  The bad team is
+        essentially a group assassin and can discuss amongst each other who they believe is Merlin before making their final decision.  In order to avoid
+        confusion as to who the Assassin is guessing, it is advised that they flip over the card of the person they are guessing to indicate that a choice
+        has been made.</string>
+    <string name="mordredRules">Mordred is the only bad person in the game that Merlin does not get to see.  This makes him a very powerful sleeper
+        agent for the bad team.  By acting as a servant of Arthur, Mordred can infiltrate missions that even Merlin thinks are good.  This can be
+        vital in failing enough missions for the bad team to win the game.  Carefully planning who you pick on missions and how you go about voting
+        is the most important step in maintaining your cover when playing Mordred.</string>
+    <string name="morganaRules">Morgana, as was mentioned before, is the bad person who is seen as Merlin to Percival.  This gives her two ways to
+        help the evil team win.  The first way is to convince Percival that she is in fact Merlin; this allows her to feed Percival bad information,
+        and makes it likely that Percival will include her on missions.  The other way Morgana can win the game is to figure out who Merlin is.  By
+        reading Percival\'s reactions to happenings in the game, Morgana can figure out the other person that Percival thinks may or may not be
+        Merlin.  This will allow her to make an educated guess about Merlin when the game is over.</string>
+    <string name="oberonRules">Oberon is an agent of evil, but his presence hurts the minions of Mordred.  Oberon is not seen by his fellow minions,
+        nor does he see who they are.  Oberon wins and loses with the bad team, but since he does not know who they are, he can have trouble working
+        with them.  Merlin does see who Oberon is, so his affiliations may be known to the good team.  Oberon must try to find out who his teammates
+        are if he wants to win the game, but he must keep in mind that doing so might out them to the good team.</string>
+    <string name="lancelotRules">Lancelot is an expansion to Avalon, and there are two main ways he can be play.  Both sets of rules regarding
+        Lancelot involve two cards, a good Lancelot and an evil Lancelot.  In the first playstyle, a deck of 7 cards is made before the game begins.
+        5 cards read "no change" while the other 2 read "change".  During the step where the minions of Mordred open their eyes, Evil Lancelot does
+        not open his eyes, but he does put a thumb up.  This lets the other bad guys know who he is, but their identities remain unknown to him.  At
+        the beginning of each mission-choosing stage, a card is drawn from the deck, and shown to the group.  If it reads "change" the two Lancelots
+        switch teams, if it reads "no change", nothing happens.  Both Lancelots must act with caution, as they may or may not change teams at any
+        point during the game, and even after switching once, it is possible that they switch again.  In the second playstyle, the two Lancelots
+        see each other during the pre-game setup, allowing for some play between the two.  In both cases, Merlin sees the Evil Lancelot as bad, but
+        does not know which one he is.</string>
+    <string name="BeginnerLabel">Gameplay</string>
+    <string name="votingRules">At the beginning of each stage of the game, the player with the crown token must pick the required number of players
+        to go on a mission.  A period for discussion of the proposed mission follows for as long as the "king" allows.  At this point, each player
+        decides upon a vote (approve or disapprove), and extends their choice face down in front of them.  Then all players reveal their votes;
+        if there is a majority of approve votes, the mission lineup is set.  If not, the mission counter token is shifted the right, and the crown
+        is passed to the left.  If the mission counter token reaches 5, and the voted upon mission does not get approved, the bad team wins the
+        game.</string>
+    <string name="missionRules">When a mission is approved, the players on the mission are each given a success card and a fail card.  If the player
+        is on the good team, they MUST put a succeed card in.  If they are on the bad team, they can choose to put in a succeed card, or a fail
+        card.  All players put their choice face down in a pile, which is then shuffled and revealed.  If there one or more fail cards is revealed,
+        the mission fails, and the bad team gets a point on the board.  If all cards read success, the mission passes, and the good team gets the
+        point.</string>
+    <string name="ladyRules">Lady of the Lake is a token who is given to the player to the right of the player with the crown.  As the crown token
+        is passed along, the Lady is as well.  Immediately after the 2nd, 3rd, and 4th missions have been completed, the player with the Lady may
+        choose a target player.  The target player is given the two loyalty cards (one red and one blue).  The player must hand the card that
+        corresponds to their team\'s alliance back to the player with the Lady.  The holder of the Lady of the Lake therefore learns the team that
+        the target player is on, and may choose to share that information to the rest of the players in the game.  However, the card that the target
+        handed to the owner of the Lady must not be shown to anyone else.  Do you trust the player with the Lady?</string>
+    <string name="excaliburRules">Excalibur is another card given to the crown holder during the team building phase.  The Excalibur card is then
+        assigned to one of the players chosen to be on the team (but cannot be the crown holder).  When a mission is approved, and mission cards are
+        decided upon the player with Excalibur may choose to use it on one other player who was on the mission.  If they chose to do so, the chosen
+        player must take back their mission card and put in the other card (thus changing a success to a fail, or a fail to a success).  Excalibur
+        is a great responsibility, and must be used carefully for the servants of Arthur to win the game.</string>
+    <string name="BeginnerOptional">Optional Add-Ins</string>
+    <string name="votingLabel">Voting</string>
+    <string name="missionLabel">Missions</string>
+    <string name="ladyLabel">Lady Of The Lake</string>
+    <string name="excaliburLabel">Excalibur</string>
+
+
+    <string name="app_name">Avalon Narrator</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_game__setup">Game_Setup</string>
+    <string name="title_activity_directions">Directions</string>
+    <string name="title_activity_reading">Reading</string>
+    <string name="title_activity_beginner__options">Beginner_Options</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!---->
+
+</resources>
