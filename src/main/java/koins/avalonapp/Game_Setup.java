@@ -1,17 +1,17 @@
 package koins.avalonapp;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.ToggleButton;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
-public class Game_Setup extends ActionBarActivity implements View.OnClickListener {
+public class Game_Setup extends AppCompatActivity implements View.OnClickListener {
 
     int isMerlin = 0;
     int isPercival = 0;
