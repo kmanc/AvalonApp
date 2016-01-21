@@ -34,7 +34,6 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
         doneReading.setOnClickListener(this);
     }
 
-
      private void buttonClick() {
          Bundle pass = new Bundle();
          pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon, isLancelot1, isLancelot2});
@@ -42,6 +41,7 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
          reading.putExtras(pass);
          startActivity(reading);
      }
+
     public void onClick(View v) {
         switch (v.getId())
         {
