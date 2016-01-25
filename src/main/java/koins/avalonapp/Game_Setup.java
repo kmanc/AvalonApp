@@ -173,11 +173,11 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
             public void onClick(View v) {
                 if (delayValue < 10) {
                     delayValue++;
-                    delay.setText(String.valueOf(delayValue));
+                    delay.setText(String.valueOf((float) delayValue / 2));
                 }
                 else {
                     delayValue = 10;
-                    delay.setText(String.valueOf(delayValue));
+                    delay.setText(String.valueOf((float)delayValue/2));
                 }
             }
         });
@@ -186,16 +186,16 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
             public void onClick(View v) {
                 if (delayValue > 1) {
                     delayValue--;
-                    delay.setText(String.valueOf(delayValue));
+                    delay.setText(String.valueOf((float)delayValue/2));
                 }
                 else {
                     delayValue = 1;
-                    delay.setText(String.valueOf(delayValue));
+                    delay.setText(String.valueOf((float)delayValue/2));
                 }
             }
         });
 
-        delay.setText(String.valueOf(delayValue));
+        delay.setText(String.valueOf((float)delayValue/2));
     }
 
 

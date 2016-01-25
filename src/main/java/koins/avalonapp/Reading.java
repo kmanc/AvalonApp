@@ -48,21 +48,21 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(2);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(20);
                                 }
                             });
@@ -79,35 +79,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(2);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(9);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -128,21 +128,21 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(39);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(20);
                                 }
                             });
@@ -159,21 +159,21 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(21);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(20);
                                 }
                             });
@@ -190,35 +190,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(21);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(29);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(30);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -239,49 +239,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(2);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(9);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -306,35 +306,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(3);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(10);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -355,35 +355,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(39);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(13);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -404,35 +404,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(21);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(31);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -453,49 +453,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(21);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(31);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(29);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(30);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -520,21 +520,21 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(25);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(20);
                                 }
                             });
@@ -551,35 +551,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(25);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(29);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(30);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -600,49 +600,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(4);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(11);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -667,49 +667,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(3);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(10);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -734,49 +734,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(39);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(13);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -801,49 +801,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(21);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(31);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -868,63 +868,63 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(21);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(31);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(29);
                                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                     {
                                                                         @Override
                                                                         public void onCompletion(MediaPlayer mp)
                                                                         {
-                                                                            SystemClock.sleep(delayValue * 1000);
+                                                                            SystemClock.sleep(delayValue * 500);
                                                                             clipSetup(30);
                                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                             {
                                                                                 @Override
                                                                                 public void onCompletion(MediaPlayer mp)
                                                                                 {
-                                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                                    SystemClock.sleep(delayValue * 500);
                                                                                     clipSetup(20);
                                                                                 }
                                                                             });
@@ -953,35 +953,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(6);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(14);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -1002,35 +1002,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(22);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(32);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -1051,49 +1051,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(22);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(32);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(29);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(30);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -1118,35 +1118,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(25);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(35);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -1167,49 +1167,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(25);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(35);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(29);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(30);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -1234,49 +1234,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(5);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(12);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -1301,49 +1301,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(7);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(15);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -1368,49 +1368,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(23);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(33);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -1435,63 +1435,63 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(23);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(33);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(29);
                                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                     {
                                                                         @Override
                                                                         public void onCompletion(MediaPlayer mp)
                                                                         {
-                                                                            SystemClock.sleep(delayValue * 1000);
+                                                                            SystemClock.sleep(delayValue * 500);
                                                                             clipSetup(30);
                                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                             {
                                                                                 @Override
                                                                                 public void onCompletion(MediaPlayer mp)
                                                                                 {
-                                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                                    SystemClock.sleep(delayValue * 500);
                                                                                     clipSetup(20);
                                                                                 }
                                                                             });
@@ -1520,49 +1520,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(6);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(14);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -1587,49 +1587,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(22);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(32);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -1654,63 +1654,63 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(22);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(32);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(29);
                                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                     {
                                                                         @Override
                                                                         public void onCompletion(MediaPlayer mp)
                                                                         {
-                                                                            SystemClock.sleep(delayValue * 1000);
+                                                                            SystemClock.sleep(delayValue * 500);
                                                                             clipSetup(30);
                                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                             {
                                                                                 @Override
                                                                                 public void onCompletion(MediaPlayer mp)
                                                                                 {
-                                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                                    SystemClock.sleep(delayValue * 500);
                                                                                     clipSetup(20);
                                                                                 }
                                                                             });
@@ -1739,49 +1739,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(25);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(35);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -1806,63 +1806,63 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(25);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(35);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(29);
                                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                     {
                                                                         @Override
                                                                         public void onCompletion(MediaPlayer mp)
                                                                         {
-                                                                            SystemClock.sleep(delayValue * 1000);
+                                                                            SystemClock.sleep(delayValue * 500);
                                                                             clipSetup(30);
                                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                             {
                                                                                 @Override
                                                                                 public void onCompletion(MediaPlayer mp)
                                                                                 {
-                                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                                    SystemClock.sleep(delayValue * 500);
                                                                                     clipSetup(20);
                                                                                 }
                                                                             });
@@ -1891,35 +1891,35 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(26);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(36);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(20);
                                                 }
                                             });
@@ -1940,49 +1940,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(26);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(36);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(29);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(30);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -2007,49 +2007,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(8);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(30);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(16);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
 
                                                                 }
@@ -2075,49 +2075,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(24);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(34);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -2142,63 +2142,63 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(24);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(34);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(29);
                                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                     {
                                                                         @Override
                                                                         public void onCompletion(MediaPlayer mp)
                                                                         {
-                                                                            SystemClock.sleep(delayValue * 1000);
+                                                                            SystemClock.sleep(delayValue * 500);
                                                                             clipSetup(30);
                                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                             {
                                                                                 @Override
                                                                                 public void onCompletion(MediaPlayer mp)
                                                                                 {
-                                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                                    SystemClock.sleep(delayValue * 500);
                                                                                     clipSetup(20);
                                                                                 }
                                                                             });
@@ -2227,49 +2227,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(27);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(37);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -2294,63 +2294,63 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(27);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(37);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(29);
                                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                     {
                                                                         @Override
                                                                         public void onCompletion(MediaPlayer mp)
                                                                         {
-                                                                            SystemClock.sleep(delayValue * 1000);
+                                                                            SystemClock.sleep(delayValue * 500);
                                                                             clipSetup(30);
                                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                             {
                                                                                 @Override
                                                                                 public void onCompletion(MediaPlayer mp)
                                                                                 {
-                                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                                    SystemClock.sleep(delayValue * 500);
                                                                                     clipSetup(20);
                                                                                 }
                                                                             });
@@ -2379,49 +2379,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(26);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(36);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -2446,63 +2446,63 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(26);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(36);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(17);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(29);
                                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                     {
                                                                         @Override
                                                                         public void onCompletion(MediaPlayer mp)
                                                                         {
-                                                                            SystemClock.sleep(delayValue * 1000);
+                                                                            SystemClock.sleep(delayValue * 500);
                                                                             clipSetup(30);
                                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                             {
                                                                                 @Override
                                                                                 public void onCompletion(MediaPlayer mp)
                                                                                 {
-                                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                                    SystemClock.sleep(delayValue * 500);
                                                                                     clipSetup(20);
                                                                                 }
                                                                             });
@@ -2531,49 +2531,49 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(28);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(38);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(20);
                                                                 }
                                                             });
@@ -2598,63 +2598,63 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 @Override
                 public void onCompletion(MediaPlayer mp)
                 {
-                    SystemClock.sleep(delayValue * 1000);
+                    SystemClock.sleep(delayValue * 500);
                     clipSetup(28);
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                     {
                         @Override
                         public void onCompletion(MediaPlayer mp)
                         {
-                            SystemClock.sleep(delayValue * 1000);
+                            SystemClock.sleep(delayValue * 500);
                             clipSetup(19);
                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                             {
                                 @Override
                                 public void onCompletion(MediaPlayer mp)
                                 {
-                                    SystemClock.sleep(delayValue * 1000);
+                                    SystemClock.sleep(delayValue * 500);
                                     clipSetup(38);
                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                     {
                                         @Override
                                         public void onCompletion(MediaPlayer mp)
                                         {
-                                            SystemClock.sleep(delayValue * 1000);
+                                            SystemClock.sleep(delayValue * 500);
                                             clipSetup(19);
                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                             {
                                                 @Override
                                                 public void onCompletion(MediaPlayer mp)
                                                 {
-                                                    SystemClock.sleep(delayValue * 1000);
+                                                    SystemClock.sleep(delayValue * 500);
                                                     clipSetup(18);
                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                     {
                                                         @Override
                                                         public void onCompletion(MediaPlayer mp)
                                                         {
-                                                            SystemClock.sleep(delayValue * 1000);
+                                                            SystemClock.sleep(delayValue * 500);
                                                             clipSetup(19);
                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                             {
                                                                 @Override
                                                                 public void onCompletion(MediaPlayer mp)
                                                                 {
-                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                    SystemClock.sleep(delayValue * 500);
                                                                     clipSetup(29);
                                                                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                     {
                                                                         @Override
                                                                         public void onCompletion(MediaPlayer mp)
                                                                         {
-                                                                            SystemClock.sleep(delayValue * 1000);
+                                                                            SystemClock.sleep(delayValue * 500);
                                                                             clipSetup(30);
                                                                             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
                                                                             {
                                                                                 @Override
                                                                                 public void onCompletion(MediaPlayer mp)
                                                                                 {
-                                                                                    SystemClock.sleep(delayValue * 1000);
+                                                                                    SystemClock.sleep(delayValue * 500);
                                                                                     clipSetup(20);
                                                                                 }
                                                                             });
