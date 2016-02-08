@@ -125,7 +125,7 @@ public class Directions extends AppCompatActivity implements View.OnClickListene
                 }
                 else {
                     //moreMordred.startAnimation(slideUp);
-                    moreMordred.setVisibility(View.GONE);
+                    moreAssassin.setVisibility(View.GONE);
                 }
             }
         });
