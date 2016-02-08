@@ -4,6 +4,7 @@
     android:versionName="1.5"
     package="koins.avalonapp" >
 
+    <!-- -->
 
     <application
         android:allowBackup="true"
