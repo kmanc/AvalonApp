@@ -14,6 +14,7 @@ import android.widget.ToggleButton;
 public class Game_Setup extends AppCompatActivity implements View.OnClickListener {
 
     int isMerlin = 0;
+    //test
     int isPercival = 0;
     int isMordred = 0;
     int isMorgana = 0;
