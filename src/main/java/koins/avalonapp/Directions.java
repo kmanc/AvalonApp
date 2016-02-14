@@ -16,6 +16,7 @@ import android.widget.ToggleButton;
 public class Directions extends AppCompatActivity implements View.OnClickListener {
     TextView moreMerlin;
     TextView morePercival;
+    //HELP
     TextView moreAssassin;
     TextView moreMordred;
     TextView moreMorgana;
