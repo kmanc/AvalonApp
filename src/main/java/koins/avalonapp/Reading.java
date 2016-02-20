@@ -11,6 +11,10 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ArrayList;
+
 public class Reading extends AppCompatActivity implements View.OnClickListener {
 
     MediaPlayer audioPlayer;
@@ -25,6 +29,9 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
     int isOberon;
     int isLancelot1;
     int isLancelot2;
+    int playerCode = 0;
+    List<Integer> clipList = new ArrayList<Integer>();
+    int clip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,2652 +47,677 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         isOberon = array[5];
         isLancelot1 = array[6];
         isLancelot2 = array[7];
+        // Gonna try to clean up the Reading code
+        if (isMerlin == 1)
+            playerCode += 1;
+        if (isPercival == 1)
+            playerCode += 2;
+        if (isMordred == 1)
+            playerCode += 4;
+        if (isMorgana == 1)
+            playerCode += 8;
+        if (isOberon == 1)
+            playerCode += 16;
+        if (isLancelot1 == 1)
+            playerCode += 32;
+        if (isLancelot2 == 1)
+            playerCode += 64;
 
-        if ((isMerlin == 0) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(2);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(20);
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+
+        if (playerCode == 0) {
+            // No special roles
+
+            clipList.add(1);
+            clipList.add(2);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(2);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(9);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 1) {
+            // Merlin
+
+            clipList.add(1);
+            clipList.add(2);
+            clipList.add(30);
+            clipList.add(9);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 0) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(39);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(20);
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 16) {
+            // Oberon
+
+            clipList.add(1);
+            clipList.add(39);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
         }
 
-        else if ((isMerlin == 0) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(21);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(20);
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 32) {
+            // Lancelot 1
+
+            clipList.add(1);
+            clipList.add(21);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
         }
 
-        else if ((isMerlin == 0) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(21);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(29);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(30);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 64) {
+            // Lancelot 2
+
+            clipList.add(1);
+            clipList.add(21);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(2);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(9);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 3) {
+            // Merlin and Percival
+
+            clipList.add(1);
+            clipList.add(2);
+            clipList.add(30);
+            clipList.add(9);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(3);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(10);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 5) {
+            // Merlin and Mordred
+
+            clipList.add(1);
+            clipList.add(3);
+            clipList.add(30);
+            clipList.add(10);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(39);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(13);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 17) {
+            //Merlin and Oberon
+
+            clipList.add(1);
+            clipList.add(39);
+            clipList.add(30);
+            clipList.add(13);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(21);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(31);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 33) {
+            // Merlin and Lancelot 1
+
+            clipList.add(1);
+            clipList.add(21);
+            clipList.add(19);
+            clipList.add(31);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(21);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(31);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(29);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(30);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 65) {
+            // Merlin and Lancelot 2
+
+            clipList.add(1);
+            clipList.add(21);
+            clipList.add(19);
+            clipList.add(31);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 0) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(25);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(20);
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 48) {
+            // Oberon and Lancelot 1
+
+            clipList.add(1);
+            clipList.add(25);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 0) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(25);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(29);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(30);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 80) {
+            // Oberon and Lancelot 2
+
+            clipList.add(1);
+            clipList.add(25);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 1) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(4);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(11);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 11) {
+            // Merlin, Percival, Morgana
+
+            clipList.add(1);
+            clipList.add(4);
+            clipList.add(30);
+            clipList.add(11);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(3);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(10);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 7) {
+            // Merlin, Percival, Mordred
+
+            clipList.add(1);
+            clipList.add(3);
+            clipList.add(30);
+            clipList.add(10);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(39);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(13);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 19) {
+            // Merlin, Percival, Oberon
+
+            clipList.add(1);
+            clipList.add(39);
+            clipList.add(30);
+            clipList.add(13);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(21);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(31);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 35) {
+            // Merlin, Percival, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(21);
+            clipList.add(19);
+            clipList.add(31);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(21);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(31);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(29);
-                                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                    {
-                                                                        @Override
-                                                                        public void onCompletion(MediaPlayer mp)
-                                                                        {
-                                                                            SystemClock.sleep(delayValue * 500);
-                                                                            clipSetup(30);
-                                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                            {
-                                                                                @Override
-                                                                                public void onCompletion(MediaPlayer mp)
-                                                                                {
-                                                                                    SystemClock.sleep(delayValue * 500);
-                                                                                    clipSetup(20);
-                                                                                }
-                                                                            });
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 67) {
+            // Merlin, Percival, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(21);
+            clipList.add(19);
+            clipList.add(31);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(6);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(14);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 21) {
+            // Merlin, Mordred, Oberon
+
+            clipList.add(1);
+            clipList.add(6);
+            clipList.add(30);
+            clipList.add(14);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(22);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(32);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 37) {
+            // Merlin, Mordred, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(22);
+            clipList.add(19);
+            clipList.add(32);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(22);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(32);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(29);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(30);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 69) {
+            // Merlin, Mordred, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(22);
+            clipList.add(19);
+            clipList.add(32);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(25);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(35);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 49) {
+            // Merlin, Oberon, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(25);
+            clipList.add(19);
+            clipList.add(35);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(25);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(35);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(29);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(30);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 81) {
+            // Merlin, Oberon, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(25);
+            clipList.add(19);
+            clipList.add(35);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 1) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(5);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(12);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 15) {
+            // Merlin, Percival, Mordred, Morgana
+
+            clipList.add(1);
+            clipList.add(5);
+            clipList.add(30);
+            clipList.add(12);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 1) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(7);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(15);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 27) {
+            // Merlin, Percival, Morgana, Oberon
+
+            clipList.add(1);
+            clipList.add(7);
+            clipList.add(30);
+            clipList.add(15);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 1) && (isOberon == 0) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(23);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(33);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 43) {
+            // Merlin, Percival, Morgana, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(23);
+            clipList.add(19);
+            clipList.add(33);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 1) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(23);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(33);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(29);
-                                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                    {
-                                                                        @Override
-                                                                        public void onCompletion(MediaPlayer mp)
-                                                                        {
-                                                                            SystemClock.sleep(delayValue * 500);
-                                                                            clipSetup(30);
-                                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                            {
-                                                                                @Override
-                                                                                public void onCompletion(MediaPlayer mp)
-                                                                                {
-                                                                                    SystemClock.sleep(delayValue * 500);
-                                                                                    clipSetup(20);
-                                                                                }
-                                                                            });
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 75) {
+            // Merlin, Percival, Morgana, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(23);
+            clipList.add(19);
+            clipList.add(33);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(6);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(14);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 23) {
+            // Merlin, Percival, Mordred, Oberon
+
+            clipList.add(1);
+            clipList.add(6);
+            clipList.add(30);
+            clipList.add(14);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(22);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(32);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 39) {
+            // Merlin, Percival, Mordred, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(22);
+            clipList.add(19);
+            clipList.add(32);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(22);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(32);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(29);
-                                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                    {
-                                                                        @Override
-                                                                        public void onCompletion(MediaPlayer mp)
-                                                                        {
-                                                                            SystemClock.sleep(delayValue * 500);
-                                                                            clipSetup(30);
-                                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                            {
-                                                                                @Override
-                                                                                public void onCompletion(MediaPlayer mp)
-                                                                                {
-                                                                                    SystemClock.sleep(delayValue * 500);
-                                                                                    clipSetup(20);
-                                                                                }
-                                                                            });
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 71) {
+            // Merlin, Percival, Mordred, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(22);
+            clipList.add(19);
+            clipList.add(32);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(25);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(35);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 51) {
+            // Merlin, Percival, Oberon, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(25);
+            clipList.add(19);
+            clipList.add(35);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(25);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(35);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(29);
-                                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                    {
-                                                                        @Override
-                                                                        public void onCompletion(MediaPlayer mp)
-                                                                        {
-                                                                            SystemClock.sleep(delayValue * 500);
-                                                                            clipSetup(30);
-                                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                            {
-                                                                                @Override
-                                                                                public void onCompletion(MediaPlayer mp)
-                                                                                {
-                                                                                    SystemClock.sleep(delayValue * 500);
-                                                                                    clipSetup(20);
-                                                                                }
-                                                                            });
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 83) {
+            // Merlin, Percival, Oberon, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(25);
+            clipList.add(19);
+            clipList.add(35);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(26);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(36);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(20);
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 53) {
+            // Merlin, Mordred, Oberon, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(26);
+            clipList.add(19);
+            clipList.add(36);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 0) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(26);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(36);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(29);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(30);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 85) {
+            // Merlin, Mordred, Oberon, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(26);
+            clipList.add(19);
+            clipList.add(36);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 1) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(8);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(30);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(16);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
+        else if (playerCode == 31) {
+            // Merlin, Percival, Mordred, Morgana, Oberon
 
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+            clipList.add(1);
+            clipList.add(8);
+            clipList.add(30);
+            clipList.add(16);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 1) && (isOberon == 0) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(24);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(34);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 47) {
+            // Merlin, Percival, Mordred, Morgana, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(24);
+            clipList.add(19);
+            clipList.add(34);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 1) && (isOberon == 0) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(24);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(34);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(29);
-                                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                    {
-                                                                        @Override
-                                                                        public void onCompletion(MediaPlayer mp)
-                                                                        {
-                                                                            SystemClock.sleep(delayValue * 500);
-                                                                            clipSetup(30);
-                                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                            {
-                                                                                @Override
-                                                                                public void onCompletion(MediaPlayer mp)
-                                                                                {
-                                                                                    SystemClock.sleep(delayValue * 500);
-                                                                                    clipSetup(20);
-                                                                                }
-                                                                            });
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 79) {
+            // Merlin, Percival, Mordred, Morgana, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(24);
+            clipList.add(19);
+            clipList.add(34);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 1) && (isOberon == 1) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(27);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(37);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 59) {
+            // Merlin, Percival, Morgana, Oberon, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(27);
+            clipList.add(19);
+            clipList.add(37);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 0) && (isMorgana == 1) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(27);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(37);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(29);
-                                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                    {
-                                                                        @Override
-                                                                        public void onCompletion(MediaPlayer mp)
-                                                                        {
-                                                                            SystemClock.sleep(delayValue * 500);
-                                                                            clipSetup(30);
-                                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                            {
-                                                                                @Override
-                                                                                public void onCompletion(MediaPlayer mp)
-                                                                                {
-                                                                                    SystemClock.sleep(delayValue * 500);
-                                                                                    clipSetup(20);
-                                                                                }
-                                                                            });
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 91) {
+            // Merlin, Percival, Morgana, Oberon, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(27);
+            clipList.add(19);
+            clipList.add(37);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(26);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(36);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 55) {
+            // Merlin, Percival, Mordred, Oberon, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(26);
+            clipList.add(19);
+            clipList.add(36);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 0) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(26);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(36);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(17);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(29);
-                                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                    {
-                                                                        @Override
-                                                                        public void onCompletion(MediaPlayer mp)
-                                                                        {
-                                                                            SystemClock.sleep(delayValue * 500);
-                                                                            clipSetup(30);
-                                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                            {
-                                                                                @Override
-                                                                                public void onCompletion(MediaPlayer mp)
-                                                                                {
-                                                                                    SystemClock.sleep(delayValue * 500);
-                                                                                    clipSetup(20);
-                                                                                }
-                                                                            });
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 87) {
+            // Merlin, Percival, Mordred, Oberon, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(26);
+            clipList.add(19);
+            clipList.add(36);
+            clipList.add(19);
+            clipList.add(17);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 1) && (isOberon == 1) && (isLancelot1 == 1) && (isLancelot2 == 0)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(28);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(38);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(20);
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 63) {
+            // Merlin, Percival, Mordred, Morgana, Oberon, Lancelot 1
+
+            clipList.add(1);
+            clipList.add(28);
+            clipList.add(19);
+            clipList.add(38);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(20);
+
+            playClip(clipList);
+
         }
 
-        else if ((isMerlin == 1) && (isPercival == 1) && (isMordred == 1) && (isMorgana == 1) && (isOberon == 1) && (isLancelot1 == 0) && (isLancelot2 == 1)) {
-            clipSetup(1);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    SystemClock.sleep(delayValue * 500);
-                    clipSetup(28);
-                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                    {
-                        @Override
-                        public void onCompletion(MediaPlayer mp)
-                        {
-                            SystemClock.sleep(delayValue * 500);
-                            clipSetup(19);
-                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                            {
-                                @Override
-                                public void onCompletion(MediaPlayer mp)
-                                {
-                                    SystemClock.sleep(delayValue * 500);
-                                    clipSetup(38);
-                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                    {
-                                        @Override
-                                        public void onCompletion(MediaPlayer mp)
-                                        {
-                                            SystemClock.sleep(delayValue * 500);
-                                            clipSetup(19);
-                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                            {
-                                                @Override
-                                                public void onCompletion(MediaPlayer mp)
-                                                {
-                                                    SystemClock.sleep(delayValue * 500);
-                                                    clipSetup(18);
-                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                    {
-                                                        @Override
-                                                        public void onCompletion(MediaPlayer mp)
-                                                        {
-                                                            SystemClock.sleep(delayValue * 500);
-                                                            clipSetup(19);
-                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                            {
-                                                                @Override
-                                                                public void onCompletion(MediaPlayer mp)
-                                                                {
-                                                                    SystemClock.sleep(delayValue * 500);
-                                                                    clipSetup(29);
-                                                                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                    {
-                                                                        @Override
-                                                                        public void onCompletion(MediaPlayer mp)
-                                                                        {
-                                                                            SystemClock.sleep(delayValue * 500);
-                                                                            clipSetup(30);
-                                                                            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                                                                            {
-                                                                                @Override
-                                                                                public void onCompletion(MediaPlayer mp)
-                                                                                {
-                                                                                    SystemClock.sleep(delayValue * 500);
-                                                                                    clipSetup(20);
-                                                                                }
-                                                                            });
-                                                                        }
-                                                                    });
-                                                                }
-                                                            });
-                                                        }
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    });
-                                }
-                            });
-                        }
-                    });
-                }
-            });
+        else if (playerCode == 85) {
+            // Merlin, Percival, Mordred, Morgana, Oberon, Lancelot 2
+
+            clipList.add(1);
+            clipList.add(28);
+            clipList.add(19);
+            clipList.add(38);
+            clipList.add(19);
+            clipList.add(18);
+            clipList.add(19);
+            clipList.add(29);
+            clipList.add(30);
+            clipList.add(20);
+
+            playClip(clipList);
         }
 
         else{
-            clipSetup(40);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-            {
-                @Override
-                public void onCompletion(MediaPlayer mp)
-                {
-                    GameSetup();
-                }
-            });
+
+            clipList.add(40);
+
+            playClip(clipList);
         }
 
         super.onCreate(savedInstanceState);
@@ -2703,7 +735,8 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         startActivity(new Intent(".GameSetup"));
     }
 
-    private void PlayAgain(){ Intent reading = new Intent (Reading.this, Reading.class);
+    private void PlayAgain(){
+        Intent reading = new Intent (Reading.this, Reading.class);
         audioPlayer.stop();
         Bundle pass = new Bundle();
         pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon, isLancelot1, isLancelot2});
@@ -2711,7 +744,8 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         startActivity(reading);
     }
 
-    private void MainMenu(){ Intent goBack = new Intent (Reading.this, MainActivity.class);
+    private void MainMenu(){
+        Intent goBack = new Intent (Reading.this, MainActivity.class);
         audioPlayer.stop();
         goBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(goBack);
@@ -2931,5 +965,21 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
     public void onStop(){
         super.onStop();
         audioPlayer.stop();
+    }
+
+    public void playClip(final List clipList) {
+        if(!clipList.isEmpty()) {
+            clip = (int) clipList.remove(0);
+        }
+        else
+            return;
+        clipSetup(clip);
+            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+                    SystemClock.sleep(delayValue * 500);
+                    playClip(clipList);
+                }
+            });
     }
 }

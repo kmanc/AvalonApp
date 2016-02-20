@@ -33,33 +33,34 @@
         (with the exception of Mordred if he is in play).  This allows him to steer the good team in the right direction.  Whether it be through
         casual conversational hints, the missions he picks, or the way he votes, Merlin can help secure victory for the loyal servants of Arthur.
         He must be careful however, if the good team wins the game, the bad team has one chance to guess who Merlin is; if they guess correctly,
-        the bad team wins the game.  A skillful Merlin can help his team while remaining undetected.</string>
+        the bad team wins the game.  A skillful Merlin can help his team while remaining undetected.  Merlin gives an advantage to the good (blue) team.</string>
     <string name="percivalRules">Percival is also a powerful asset for the good team.  During the game setup, Percival learns the identity of Merlin
         (unless Morgana is in play, in which case he sees two people; one is Merlin and the other is Morgana).  This gives him a considerable
         advantage in discerning who the bad guys are.  By listening to Merlin\'s hints, he can help the good team succeed missions.  In addition,
         Percival can pose himself as Merlin, and draw attention away from him.  This can be vital in the end-game phase when the bad guys attempt to
         guess who Merlin is; if they guess incorrectly, the good guys still win.  Be wary in games that include Morgana.  Morgana knows who the bad
         guys are, so she can provide just as good information as Merlin, however she may just as easily lead you astray.  Figuring out who is the
-        real Merlin must be done with care to play a successful Percival. </string>
+        real Merlin must be done with care to play a successful Percival. Percival gives an advantage to the good (blue) team.</string>
     <string name="assassinRules">Assassin is the direct counter to Merlin, and should be used in every game that includes Merlin.  As mentioned in the
         Merlin explanation, if the good team wins with Merlin and Assassin in play, the Assassin is allowed to guess who Merlin is.  If the Assassin\'s guess
         is correct, the bad team wins the game.  More often than not, Assassin is an assumed role, so the card need not be played.  The bad team is
         essentially a group assassin and can discuss amongst each other who they believe is Merlin before making their final decision.  In order to avoid
         confusion as to who the Assassin is guessing, it is advised that they flip over the card of the person they are guessing to indicate that a choice
-        has been made.</string>
+        has been made.  Assasin is a must have in any game that includes Merlin, and gives an advantage to the bad (red) team.</string>
     <string name="mordredRules">Mordred is the only bad person in the game that Merlin does not get to see.  This makes him a very powerful sleeper
         agent for the bad team.  By acting as a servant of Arthur, Mordred can infiltrate missions that even Merlin thinks are good.  This can be
         vital in failing enough missions for the bad team to win the game.  Carefully planning who you pick on missions and how you go about voting
-        is the most important step in maintaining your cover when playing Mordred.</string>
+        is the most important step in maintaining your cover when playing Mordred.  Mordred gives an advantage to the bad (red) team.</string>
     <string name="morganaRules">Morgana, as was mentioned before, is the bad person who is seen as Merlin to Percival.  This gives her two ways to
         help the evil team win.  The first way is to convince Percival that she is in fact Merlin; this allows her to feed Percival bad information,
         and makes it likely that Percival will include her on missions.  The other way Morgana can win the game is to figure out who Merlin is.  By
         reading Percival\'s reactions to happenings in the game, Morgana can figure out the other person that Percival thinks may or may not be
-        Merlin.  This will allow her to make an educated guess about Merlin when the game is over.</string>
+        Merlin.  This will allow her to make an educated guess about Merlin when the game is over. Morgana gives an advantage to the bad (red) team.</string>
     <string name="oberonRules">Oberon is an agent of evil, but his presence hurts the minions of Mordred.  Oberon is not seen by his fellow minions,
         nor does he see who they are.  Oberon wins and loses with the bad team, but since he does not know who they are, he can have trouble working
         with them.  Merlin does see who Oberon is, so his affiliations may be known to the good team.  Oberon must try to find out who his teammates
-        are if he wants to win the game, but he must keep in mind that doing so might out them to the good team.</string>
+        are if he wants to win the game, but he must keep in mind that doing so might out them to the good team.  Oberon is a tricky character
+        to categorize, but in general, he gives an advantage to the good (blue) team.</string>
     <string name="lancelotRules">Lancelot is an expansion to Avalon, and there are two main ways he can be play.  Both sets of rules regarding
         Lancelot involve two cards, a good Lancelot and an evil Lancelot.  In the first playstyle, a deck of 7 cards is made before the game begins.
         5 cards read "no change" while the other 2 read "change".  During the step where the minions of Mordred open their eyes, Evil Lancelot does
@@ -68,7 +69,7 @@
         switch teams, if it reads "no change", nothing happens.  Both Lancelots must act with caution, as they may or may not change teams at any
         point during the game, and even after switching once, it is possible that they switch again.  In the second playstyle, the two Lancelots
         see each other during the pre-game setup, allowing for some play between the two.  In both cases, Merlin sees the Evil Lancelot as bad, but
-        does not know which one he is.</string>
+        does not know which one he is.  Lancelot does not provide either team with an adcantage as far as we know.</string>
     <string name="BeginnerLabel">Gameplay</string>
     <string name="votingRules">At the beginning of each stage of the game, the player with the crown token must pick the required number of players
         to go on a mission.  A period for discussion of the proposed mission follows for as long as the "king" allows.  At this point, each player
