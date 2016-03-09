@@ -11,9 +11,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import java.util.LinkedList;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Reading extends AppCompatActivity implements View.OnClickListener {
 
@@ -971,8 +970,10 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         if(!clipList.isEmpty()) {
             clip = (int) clipList.remove(0);
         }
-        else
+        else{
+            getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
             return;
+        }
         clipSetup(clip);
             audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
