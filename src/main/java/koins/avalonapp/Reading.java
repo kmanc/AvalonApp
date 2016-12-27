@@ -46,7 +46,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         isOberon = array[5];
         isLancelot1 = array[6];
         isLancelot2 = array[7];
-        // Gonna try to clean up the Reading code
         if (isMerlin == 1)
             playerCode += 1;
         if (isPercival == 1)

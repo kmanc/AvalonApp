@@ -1,1 +1,5 @@
 /build
+*.apk
+.gradle/*
+.idea/*
+AvalonApp-release.apk

@@ -20,7 +20,7 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
     int isOberon = 0;
     int isLancelot1 = 0;
     int isLancelot2 = 0;
-    int delayValue = 3;
+    int delayValue = 5;
 
     Button doneReading;
 
@@ -173,7 +173,7 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
             public void onClick(View v) {
                 if (delayValue < 10) {
                     delayValue++;
-                    delay.setText(String.valueOf((float) delayValue / 2));
+                    delay.setText(String.valueOf((float)delayValue/2));
                 }
                 else {
                     delayValue = 10;
