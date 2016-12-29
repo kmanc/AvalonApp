@@ -20,6 +20,7 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
     int isOberon = 0;
     int isLancelot1 = 0;
     int isLancelot2 = 0;
+    int voiceChoice = 0;
     int delayValue = 5;
 
     Button doneReading;
@@ -36,7 +37,7 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
 
      private void buttonClick() {
          Bundle pass = new Bundle();
-         pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon, isLancelot1, isLancelot2});
+         pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon, isLancelot1, isLancelot2, voiceChoice});
          Intent reading = new Intent(getApplicationContext(), Reading.class);
          reading.putExtras(pass);
          startActivity(reading);
@@ -91,6 +92,7 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
         final Button plusButton = (Button) findViewById(R.id.plusButton);
         final Button minusButton = (Button) findViewById(R.id.minusButton);
         final TextView delay = (TextView) findViewById(R.id.pauseValue);
+        final Button voiceButton = (Button) findViewById(R.id.voiceoption);
 
         merlinSwitch.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -191,6 +193,20 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
                 else {
                     delayValue = 1;
                     delay.setText(String.valueOf((float)delayValue/2));
+                }
+            }
+        });
+
+        voiceButton.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                // Make the modulus equal to the number of voice packs we have
+                voiceChoice = (voiceChoice + 1) % 2;
+                // Set Text to something useful for the end user
+                if (voiceChoice == 0) {
+                    voiceButton.setText("Option One");
+                }
+                if (voiceChoice == 1) {
+                    voiceButton.setText("Option Two");
                 }
             }
         });

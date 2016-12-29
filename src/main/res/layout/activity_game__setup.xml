@@ -107,12 +107,22 @@
         android:layout_alignParentEnd="true" />
 
     <Button
+        android:id="@+id/voiceoption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voice_choice"
+        android:background="@drawable/navigation"
+        android:layout_below="@+id/minusButton"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
         android:id="@+id/done_reading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/done_reading"
         android:background="@drawable/navigation"
-        android:layout_below="@+id/minusButton"
+        android:layout_below="@+id/voiceoption"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true" />
 

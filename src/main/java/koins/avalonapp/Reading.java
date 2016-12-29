@@ -28,6 +28,7 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
     int isOberon;
     int isLancelot1;
     int isLancelot2;
+    int voicePack;
     int playerCode = 0;
     List<Integer> clipList = new ArrayList<Integer>();
     int clip;
@@ -46,6 +47,7 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         isOberon = array[5];
         isLancelot1 = array[6];
         isLancelot2 = array[7];
+        voicePack = array[8];
         if (isMerlin == 1)
             playerCode += 1;
         if (isPercival == 1)
@@ -796,163 +798,283 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
     private MediaPlayer clipSetup(int i){
         switch (i) {
             case 1:
-                audioPlayer = MediaPlayer.create(this, R.raw.one);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(this, R.raw.one);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(this, R.raw.one);
                 audioPlayer.start();
                 break;
             case 2:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.two);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.two);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.two);
                 audioPlayer.start();
                 break;
             case 3:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.three);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.three);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.three);
                 audioPlayer.start();
                 break;
             case 4:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.four);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.four);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.four);
                 audioPlayer.start();
                 break;
             case 5:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.five);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.five);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.five);
                 audioPlayer.start();
                 break;
             case 6:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.six);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.six);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.six);
                 audioPlayer.start();
                 break;
             case 7:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.seven);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.seven);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.seven);
                 audioPlayer.start();
                 break;
             case 8:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.eight);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eight);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eight);
                 audioPlayer.start();
                 break;
             case 9:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.nine);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.nine);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.nine);
                 audioPlayer.start();
                 break;
             case 10:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.ten);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.ten);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.ten);
                 audioPlayer.start();
                 break;
             case 11:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.eleven);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eleven);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eleven);
                 audioPlayer.start();
                 break;
             case 12:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twelve);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twelve);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twelve);
                 audioPlayer.start();
                 break;
             case 13:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirteen);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirteen);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirteen);
                 audioPlayer.start();
                 break;
             case 14:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.fourteen);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.fourteen);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.fourteen);
                 audioPlayer.start();
                 break;
             case 15:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.fifteen);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.fifteen);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.fifteen);
                 audioPlayer.start();
                 break;
             case 16:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.sixteen);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.sixteen);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.sixteen);
                 audioPlayer.start();
                 break;
             case 17:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.seventeen);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.seventeen);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.seventeen);
                 audioPlayer.start();
                 break;
             case 18:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.eighteen);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eighteen);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eighteen);
                 audioPlayer.start();
                 break;
             case 19:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.nineteen);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.nineteen);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.nineteen);
                 audioPlayer.start();
                 break;
             case 20:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twenty);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twenty);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twenty);
                 audioPlayer.start();
                 break;
             case 21:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyone);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyone);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyone);
                 audioPlayer.start();
                 break;
             case 22:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentytwo);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentytwo);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentytwo);
                 audioPlayer.start();
                 break;
             case 23:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentythree);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentythree);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentythree);
                 audioPlayer.start();
                 break;
             case 24:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfour);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfour);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfour);
                 audioPlayer.start();
                 break;
             case 25:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfive);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfive);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfive);
                 audioPlayer.start();
                 break;
             case 26:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentysix);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentysix);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentysix);
                 audioPlayer.start();
                 break;
             case 27:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyseven);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyseven);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyseven);
                 audioPlayer.start();
                 break;
             case 28:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyeight);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyeight);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyeight);
                 audioPlayer.start();
                 break;
             case 29:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentynine);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentynine);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentynine);
                 audioPlayer.start();
                 break;
             case 30:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirty);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirty);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirty);
                 audioPlayer.start();
                 break;
             case 31:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyone);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyone);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyone);
                 audioPlayer.start();
                 break;
             case 32:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtytwo);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtytwo);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtytwo);
                 audioPlayer.start();
                 break;
             case 33:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtythree);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtythree);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtythree);
                 audioPlayer.start();
                 break;
             case 34:
-                audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfour);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfour);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfour);
                 audioPlayer.start();
                 break;
             case 35:
-                 audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfive);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfive);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfive);
                  audioPlayer.start();
                 break;
             case 36:
-                audioPlayer = MediaPlayer.create(this, R.raw.thirtysix);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtysix);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtysix);
                 audioPlayer.start();
                 break;
             case 37:
-                audioPlayer = MediaPlayer.create(this, R.raw.thirtyseven);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyseven);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyseven);
                 audioPlayer.start();
                 break;
             case 38:
-                audioPlayer = MediaPlayer.create(this, R.raw.thirtyeight);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyeight);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyeight);
                 audioPlayer.start();
                 break;
             case 39:
-                audioPlayer = MediaPlayer.create(this, R.raw.thirtynine);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtynine);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtynine);
                 audioPlayer.start();
                 break;
             case 40:
-                audioPlayer = MediaPlayer.create(this, R.raw.forty);
+                if (voicePack == 0)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.forty);
+                if (voicePack == 1)
+                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.forty);
                 audioPlayer.start();
                 break;
         }
