@@ -796,288 +796,136 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
     }
 
     private MediaPlayer clipSetup(int i){
+        int recording;
+        String audioFileName = "";
         switch (i) {
             case 1:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(this, R.raw.one);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(this, R.raw.one);
-                audioPlayer.start();
+                audioFileName = "one";
                 break;
             case 2:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.two);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.two);
-                audioPlayer.start();
+                audioFileName = "two";
                 break;
             case 3:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.three);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.three);
-                audioPlayer.start();
+                audioFileName = "three";
                 break;
             case 4:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.four);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.four);
-                audioPlayer.start();
+                audioFileName = "four";
                 break;
             case 5:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.five);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.five);
-                audioPlayer.start();
+                audioFileName = "five";
                 break;
             case 6:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.six);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.six);
-                audioPlayer.start();
+                audioFileName = "six";
                 break;
             case 7:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.seven);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.seven);
-                audioPlayer.start();
+                audioFileName = "seven";
                 break;
             case 8:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eight);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eight);
-                audioPlayer.start();
+                audioFileName = "eight";
                 break;
             case 9:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.nine);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.nine);
-                audioPlayer.start();
+                audioFileName = "nine";
                 break;
             case 10:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.ten);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.ten);
-                audioPlayer.start();
+                audioFileName = "ten";
                 break;
             case 11:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eleven);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eleven);
-                audioPlayer.start();
+                audioFileName = "eleven";
                 break;
             case 12:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twelve);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twelve);
-                audioPlayer.start();
+                audioFileName = "twelve";
                 break;
             case 13:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirteen);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirteen);
-                audioPlayer.start();
+                audioFileName = "thirteen";
                 break;
             case 14:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.fourteen);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.fourteen);
-                audioPlayer.start();
+                audioFileName = "fourteen";
                 break;
             case 15:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.fifteen);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.fifteen);
-                audioPlayer.start();
+                audioFileName = "fifteen";
                 break;
             case 16:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.sixteen);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.sixteen);
-                audioPlayer.start();
+                audioFileName = "sixteen";
                 break;
             case 17:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.seventeen);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.seventeen);
-                audioPlayer.start();
+                audioFileName = "seventeen";
                 break;
             case 18:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eighteen);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.eighteen);
-                audioPlayer.start();
+                audioFileName = "eighteen";
                 break;
             case 19:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.nineteen);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.nineteen);
-                audioPlayer.start();
+                audioFileName = "nineteen";
                 break;
             case 20:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twenty);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twenty);
-                audioPlayer.start();
+                audioFileName = "twenty";
                 break;
             case 21:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyone);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyone);
-                audioPlayer.start();
+                audioFileName = "twentyone";
                 break;
             case 22:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentytwo);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentytwo);
-                audioPlayer.start();
+                audioFileName = "twentytwo";
                 break;
             case 23:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentythree);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentythree);
-                audioPlayer.start();
+                audioFileName = "twentythree";
                 break;
             case 24:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfour);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfour);
-                audioPlayer.start();
+                audioFileName = "twentyfour";
                 break;
             case 25:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfive);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyfive);
-                audioPlayer.start();
+                audioFileName = "twentyfive";
                 break;
             case 26:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentysix);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentysix);
-                audioPlayer.start();
+                audioFileName = "twentysix";
                 break;
             case 27:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyseven);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyseven);
-                audioPlayer.start();
+                audioFileName = "twentyseven";
                 break;
             case 28:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyeight);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentyeight);
-                audioPlayer.start();
+                audioFileName = "twentyeight";
                 break;
             case 29:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentynine);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.twentynine);
-                audioPlayer.start();
+                audioFileName = "twentynine";
                 break;
             case 30:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirty);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirty);
-                audioPlayer.start();
+                audioFileName = "thirty";
                 break;
             case 31:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyone);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyone);
-                audioPlayer.start();
+                audioFileName = "thirtyone";
                 break;
             case 32:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtytwo);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtytwo);
-                audioPlayer.start();
+                audioFileName = "thirtytwo";
                 break;
             case 33:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtythree);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtythree);
-                audioPlayer.start();
+                audioFileName = "thirtythree";
                 break;
             case 34:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfour);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfour);
-                audioPlayer.start();
+                audioFileName = "thirtyfour";
                 break;
             case 35:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfive);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyfive);
-                 audioPlayer.start();
+                audioFileName = "thirtyfive";
                 break;
             case 36:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtysix);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtysix);
-                audioPlayer.start();
+                audioFileName = "thirtysix";
                 break;
             case 37:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyseven);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyseven);
-                audioPlayer.start();
+                audioFileName = "thirtyseven";
                 break;
             case 38:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyeight);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtyeight);
-                audioPlayer.start();
+                audioFileName = "thirtyeight";
                 break;
             case 39:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtynine);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.thirtynine);
-                audioPlayer.start();
+                audioFileName = "thirtynine";
                 break;
             case 40:
-                if (voicePack == 0)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.forty);
-                if (voicePack == 1)
-                    audioPlayer = MediaPlayer.create(Reading.this, R.raw.forty);
-                audioPlayer.start();
+                audioFileName = "forty";
                 break;
         }
+        if (voicePack == 1)
+            audioFileName += "vpone";
+        System.out.println(audioFileName);
+        recording = this.getResources().getIdentifier(audioFileName, "raw", this.getPackageName());
+        audioPlayer = MediaPlayer.create(this, recording);
+        audioPlayer.start();
         return audioPlayer;
     }
 
