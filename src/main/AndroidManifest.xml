@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:versionCode="11"
-    android:versionName="1.8"
+    android:versionCode="12"
+    android:versionName="2.0"
     package="koins.avalonapp" >
 
     <!-- -->
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/redandbluelogo"
+        android:icon="@drawable/roundedapplogo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -16,7 +16,6 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

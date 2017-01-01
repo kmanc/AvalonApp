@@ -922,7 +922,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         }
         if (voicePack == 1)
             audioFileName += "vpone";
-        System.out.println(audioFileName);
         recording = this.getResources().getIdentifier(audioFileName, "raw", this.getPackageName());
         audioPlayer = MediaPlayer.create(this, recording);
         audioPlayer.start();

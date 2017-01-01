@@ -37,7 +37,8 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
 
      private void buttonClick() {
          Bundle pass = new Bundle();
-         pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon, isLancelot1, isLancelot2, voiceChoice});
+         pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred,
+                                            isMorgana, isOberon, isLancelot1, isLancelot2, voiceChoice});
          Intent reading = new Intent(getApplicationContext(), Reading.class);
          reading.putExtras(pass);
          startActivity(reading);

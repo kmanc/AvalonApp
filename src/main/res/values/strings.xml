@@ -61,7 +61,7 @@
         with them.  Merlin does see who Oberon is, so his affiliations may be known to the good team.  Oberon must try to find out who his teammates
         are if he wants to win the game, but he must keep in mind that doing so might out them to the good team.  Oberon is a tricky character
         to categorize, but in general, he gives an advantage to the good (blue) team.</string>
-    <string name="lancelotRules">Lancelot is an expansion to Avalon, and there are two main ways he can be play.  Both sets of rules regarding
+    <string name="lancelotRules">Lancelot is an expansion to Avalon, and there are two main ways he can be played.  Both sets of rules regarding
         Lancelot involve two cards, a good Lancelot and an evil Lancelot.  In the first playstyle, a deck of 7 cards is made before the game begins.
         5 cards read "no change" while the other 2 read "change".  During the step where the minions of Mordred open their eyes, Evil Lancelot does
         not open his eyes, but he does put a thumb up.  This lets the other bad guys know who he is, but their identities remain unknown to him.  At
@@ -108,6 +108,6 @@
     <string name="title_activity_beginner__options">Beginner_Options</string>
     <string name="voice_choice">Option One</string>
 
-    <!---->
+    <!-- -->
 
 </resources>
