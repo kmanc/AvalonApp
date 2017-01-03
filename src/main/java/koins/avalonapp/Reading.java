@@ -72,8 +72,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 1) {
@@ -86,8 +84,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 16) {
@@ -98,7 +94,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
         }
 
         else if (playerCode == 32) {
@@ -109,7 +104,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
         }
 
         else if (playerCode == 64) {
@@ -121,8 +115,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(29);
             clipList.add(30);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -138,8 +130,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 5) {
@@ -151,8 +141,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(10);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -166,8 +154,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 33) {
@@ -179,8 +165,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(31);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -196,8 +180,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 48) {
@@ -207,8 +189,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(25);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -221,8 +201,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(29);
             clipList.add(30);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -238,8 +216,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 7) {
@@ -253,8 +229,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(17);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -270,8 +244,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 35) {
@@ -285,8 +257,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(17);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -304,8 +274,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 21) {
@@ -318,8 +286,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 37) {
@@ -331,8 +297,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(32);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -348,8 +312,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 49) {
@@ -361,8 +323,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(35);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -378,8 +338,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 15) {
@@ -393,8 +351,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(18);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -410,8 +366,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 43) {
@@ -425,8 +379,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(18);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -444,8 +396,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 23) {
@@ -460,8 +410,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 39) {
@@ -475,8 +423,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(17);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -494,8 +440,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 51) {
@@ -509,8 +453,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(17);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -528,8 +470,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 53) {
@@ -541,8 +481,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(36);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -558,8 +496,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 31) {
@@ -574,8 +510,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(19);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 47) {
@@ -589,8 +523,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(18);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -608,8 +540,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 59) {
@@ -623,8 +553,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(18);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -642,8 +570,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 55) {
@@ -657,8 +583,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(17);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -676,8 +600,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(30);
             clipList.add(20);
 
-            playClip(clipList);
-
         }
 
         else if (playerCode == 63) {
@@ -691,8 +613,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(18);
             clipList.add(19);
             clipList.add(20);
-
-            playClip(clipList);
 
         }
 
@@ -709,17 +629,15 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             clipList.add(29);
             clipList.add(30);
             clipList.add(20);
-
-            playClip(clipList);
         }
 
-        else{
+        else {
 
             clipList.add(40);
-
-            playClip(clipList);
         }
 
+        playClip(clipList);
+        getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reading);
         mainMenu = (Button) findViewById(R.id.home);
@@ -739,7 +657,7 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         Intent reading = new Intent (Reading.this, Reading.class);
         audioPlayer.stop();
         Bundle pass = new Bundle();
-        pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon, isLancelot1, isLancelot2});
+        pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon, isLancelot1, isLancelot2, voicePack});
         reading.putExtras(pass);
         startActivity(reading);
     }
@@ -935,20 +853,24 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
     }
 
     public void playClip(final List clipList) {
-        if(!clipList.isEmpty()) {
-            clip = (int) clipList.remove(0);
-        }
-        else{
-            getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-            return;
-        }
-        clipSetup(clip);
-            audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mp) {
-                    SystemClock.sleep(delayValue * 500);
-                    playClip(clipList);
+
+        new Thread(new Runnable() {
+            public void run() {
+                if(!clipList.isEmpty()) {
+                    clip = (int) clipList.remove(0);
                 }
-            });
+                else{
+                    return;
+                }
+                clipSetup(clip);
+                    audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        @Override
+                        public void onCompletion(MediaPlayer mp) {
+                            SystemClock.sleep(delayValue * 500);
+                            playClip(clipList);
+                        }
+                    });
+            }
+        }).start();
     }
 }
