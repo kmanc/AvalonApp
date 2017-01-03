@@ -29,6 +29,8 @@
     <string name="lancelots">Lancelot</string>
     <string name="showMore">Tell Me More</string>
     <string name="showLess">Ok I\'m Good</string>
+
+
     <string name="merlinRules">Merlin is one of the good team\'s greatest assets.  Before the game begins, Merlin gets to see the bad guys
         (with the exception of Mordred if he is in play).  This allows him to steer the good team in the right direction.  Whether it be through
         casual conversational hints, the missions he picks, or the way he votes, Merlin can help secure victory for the loyal servants of Arthur.
@@ -106,7 +108,7 @@
     <string name="title_activity_directions">Directions</string>
     <string name="title_activity_reading">Reading</string>
     <string name="title_activity_beginner__options">Beginner_Options</string>
-    <string name="voice_choice">Option One</string>
+    <string name="voice_choice">Voice Pack One</string>
 
     <!-- -->
 

@@ -616,7 +616,7 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
 
         }
 
-        else if (playerCode == 85) {
+        else if (playerCode == 95) {
             // Merlin, Percival, Mordred, Morgana, Oberon, Lancelot 2
 
             clipList.add(1);
@@ -657,7 +657,8 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         Intent reading = new Intent (Reading.this, Reading.class);
         audioPlayer.stop();
         Bundle pass = new Bundle();
-        pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon, isLancelot1, isLancelot2, voicePack});
+        pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon,
+                                            isLancelot1, isLancelot2, voicePack});
         reading.putExtras(pass);
         startActivity(reading);
     }
@@ -672,19 +673,16 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.ChangeSetup:
-                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
                 GameSetup();
                 break;
         }
         switch (v.getId()){
             case R.id.PlayAgain:
-                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
                 PlayAgain();
                 break;
         }
         switch (v.getId()){
             case R.id.home:
-                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
                 MainMenu();
                 break;
         }
@@ -854,6 +852,8 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
 
     public void playClip(final List clipList) {
 
+        // Audio stuff handled in a thread greatly reduces the number of skipped frames in emulation
+        // Indicating it improves app performance
         new Thread(new Runnable() {
             public void run() {
                 if(!clipList.isEmpty()) {

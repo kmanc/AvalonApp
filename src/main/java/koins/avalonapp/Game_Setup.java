@@ -204,10 +204,10 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
                 voiceChoice = (voiceChoice + 1) % 2;
                 // Set Text to something useful for the end user
                 if (voiceChoice == 0) {
-                    voiceButton.setText("Option One");
+                    voiceButton.setText("Voice Pack One");
                 }
                 if (voiceChoice == 1) {
-                    voiceButton.setText("Option Two");
+                    voiceButton.setText("Voice Pack Two");
                 }
             }
         });
