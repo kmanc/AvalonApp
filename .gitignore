@@ -8,6 +8,9 @@ src/main/res/.DS_Store
 .gradle/*
 gradle/wrapper/*
 *.iml
-*gradle*
+build.*
+gradlew
+local.properties
 *.txt
 *.pro
+*.bat
