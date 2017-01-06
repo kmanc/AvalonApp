@@ -8,7 +8,6 @@ src/main/res/.DS_Store
 .gradle/*
 gradle/wrapper/*
 *.iml
-build.*
 gradlew
 local.properties
 *.txt
