@@ -5,3 +5,9 @@
 src/.DS_Store
 src/main/.DS_Store
 src/main/res/.DS_Store
+.gradle/*
+gradle/wrapper/*
+*.iml
+*gradle*
+*.txt
+*.pro
