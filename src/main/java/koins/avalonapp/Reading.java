@@ -38,7 +38,8 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
 
         Bundle receive = this.getIntent().getExtras();
         int[] array = receive.getIntArray("key");
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_reading);
         delayValue = array[0];
         isMerlin = array[1];
         isPercival = array[2];
@@ -62,7 +63,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             playerCode += 32;
         if (isLancelot2 == 1)
             playerCode += 64;
-
 
         if (playerCode == 0) {
             // No special roles
@@ -637,9 +637,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         }
 
         playClip(clipList);
-        getWindow().clearFlags(android.view.WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reading);
         mainMenu = (Button) findViewById(R.id.home);
         mainMenu.setOnClickListener(this);
         playAgain = (Button) findViewById(R.id.PlayAgain);
@@ -649,13 +646,13 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void GameSetup() {
-        audioPlayer.stop();
+        audioCleanup();
         startActivity(new Intent(".GameSetup"));
     }
 
     private void PlayAgain(){
+        audioCleanup();
         Intent reading = new Intent (Reading.this, Reading.class);
-        audioPlayer.stop();
         Bundle pass = new Bundle();
         pass.putIntArray("key", new int[]{delayValue, isMerlin, isPercival, isMordred, isMorgana, isOberon,
                                             isLancelot1, isLancelot2, voicePack});
@@ -664,8 +661,8 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
     }
 
     private void MainMenu(){
+        audioCleanup();
         Intent goBack = new Intent (Reading.this, MainActivity.class);
-        audioPlayer.stop();
         goBack.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(goBack);
     }
@@ -840,37 +837,73 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             audioFileName += "vpone";
         recording = this.getResources().getIdentifier(audioFileName, "raw", this.getPackageName());
         audioPlayer = MediaPlayer.create(this, recording);
-        audioPlayer.start();
         return audioPlayer;
     }
 
     @Override
     public void onStop(){
+        audioCleanup();
         super.onStop();
-        audioPlayer.stop();
     }
 
     public void playClip(final List clipList) {
 
         // Audio stuff handled in a thread greatly reduces the number of skipped frames in emulation
-        // Indicating it improves app performance
+        // Indicating it improves app performance on real phones as well
         new Thread(new Runnable() {
             public void run() {
                 if(!clipList.isEmpty()) {
                     clip = (int) clipList.remove(0);
+                    screenOnFlag();
                 }
                 else{
+                    clearScreenFlag();
                     return;
                 }
                 clipSetup(clip);
+                audioPlayer.start();
                     audioPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                         @Override
                         public void onCompletion(MediaPlayer mp) {
+                            audioPlayer.stop();
+                            audioPlayer.reset();
+                            audioPlayer.release();
+                            audioPlayer = null;
                             SystemClock.sleep(delayValue * 500);
                             playClip(clipList);
                         }
                     });
             }
         }).start();
+    }
+
+    public void audioCleanup(){
+        if (audioPlayer != null){
+            audioPlayer.stop();
+            audioPlayer.reset();
+            audioPlayer.release();
+            audioPlayer = null;
+        }
+        return;
+    }
+
+    public void screenOnFlag(){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+            }
+        });
+        return;
+    }
+
+    public void clearScreenFlag(){
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+            }
+        });
+        return;
     }
 }
