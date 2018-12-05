@@ -109,6 +109,8 @@
     <Button
         android:id="@+id/voiceoption"
         android:layout_width="wrap_content"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
         android:layout_height="wrap_content"
         android:text="@string/voice_choice"
         android:background="@drawable/navigation"
@@ -119,6 +121,8 @@
     <Button
         android:id="@+id/done_reading"
         android:layout_width="wrap_content"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
         android:layout_height="wrap_content"
         android:text="@string/done_reading"
         android:background="@drawable/navigation"
