@@ -16,6 +16,8 @@
     <Button
         android:id="@+id/PlayAgain"
         android:layout_width="wrap_content"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
         android:layout_height="wrap_content"
         android:text="@string/same_setup"
         android:background="@drawable/navigation"
@@ -27,6 +29,8 @@
     <Button
         android:id="@+id/ChangeSetup"
         android:layout_width="wrap_content"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
         android:layout_height="wrap_content"
         android:text="@string/change_setup"
         android:background="@drawable/navigation"
@@ -36,6 +40,8 @@
     <Button
         android:id="@+id/home"
         android:layout_width="wrap_content"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
         android:layout_height="wrap_content"
         android:text="@string/menu"
         android:background="@drawable/navigation"

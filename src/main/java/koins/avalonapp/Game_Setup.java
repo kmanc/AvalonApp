@@ -201,22 +201,25 @@ public class Game_Setup extends AppCompatActivity implements View.OnClickListene
         voiceButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 // Make the modulus equal to the number of voice packs we have
-                voiceChoice = (voiceChoice + 1) % 5;
+                voiceChoice = (voiceChoice + 1) % 6;
                 // Set Text to something useful for the end user
                 if (voiceChoice == 0) {
                     voiceButton.setText("Classic Voice Pack");
                 }
                 if (voiceChoice == 1) {
-                    voiceButton.setText("Kermit the Voice Pack");
-                }
-                if (voiceChoice == 2) {
                     voiceButton.setText("German Voice Pack");
                 }
-                if (voiceChoice == 3) {
+                if (voiceChoice == 2) {
                     voiceButton.setText("Italian Voice Pack");
+                }
+                if (voiceChoice == 3) {
+                    voiceButton.setText("French Voice Pack");
                 }
                 if (voiceChoice == 4) {
                     voiceButton.setText("Resistance: Hidden Agenda Voice Pack");
+                }
+                if (voiceChoice == 5) {
+                    voiceButton.setText("Kermit the Voice Pack");
                 }
             }
         });

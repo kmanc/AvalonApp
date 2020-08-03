@@ -834,13 +834,15 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
         if (voicePack == 1)
-            audioFileName += "vpone";
-        if (voicePack == 2)
             audioFileName += "german";
-        if (voicePack == 3)
+        if (voicePack == 2)
             audioFileName += "italian";
+        if (voicePack == 3)
+            audioFileName += "french";
         if (voicePack == 4)
             audioFileName += "hidden";
+        if (voicePack == 5)
+            audioFileName += "vpone";
         recording = this.getResources().getIdentifier(audioFileName, "raw", this.getPackageName());
         audioPlayer = MediaPlayer.create(this, recording);
         return audioPlayer;

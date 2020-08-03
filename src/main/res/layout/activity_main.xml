@@ -28,6 +28,8 @@
     <Button
         android:id="@+id/AdvancedButton"
         android:layout_width="wrap_content"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
         android:layout_height="wrap_content"
         android:text="Experienced Player"
         android:background="@drawable/navigation"
