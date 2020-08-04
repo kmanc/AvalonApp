@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +12,8 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Reading extends AppCompatActivity implements View.OnClickListener {
 
@@ -708,7 +709,7 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
         return super.onOptionsItemSelected(item);
     }
 
-    private MediaPlayer clipSetup(int i){
+    private void clipSetup(int i){
         int recording;
         String audioFileName = "";
         switch (i) {
@@ -845,7 +846,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             audioFileName += "vpone";
         recording = this.getResources().getIdentifier(audioFileName, "raw", this.getPackageName());
         audioPlayer = MediaPlayer.create(this, recording);
-        return audioPlayer;
     }
 
     @Override
@@ -892,7 +892,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
             audioPlayer.release();
             audioPlayer = null;
         }
-        return;
     }
 
     public void screenOnFlag(){
@@ -902,7 +901,6 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
             }
         });
-        return;
     }
 
     public void clearScreenFlag(){
@@ -912,6 +910,5 @@ public class Reading extends AppCompatActivity implements View.OnClickListener {
                 getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
             }
         });
-        return;
     }
 }

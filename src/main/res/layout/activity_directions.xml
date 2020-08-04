@@ -1,11 +1,11 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true">
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
@@ -53,8 +53,8 @@
     <Button
         android:id="@+id/Play"
         android:layout_width="wrap_content"
-        android:paddingLeft="10px"
-        android:paddingRight="10px"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
         android:layout_height="wrap_content"
         android:text="@string/skip"
         android:background="@drawable/navigation"
@@ -65,75 +65,82 @@
     <ImageView
         android:id="@+id/merlinPic"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/merlin"
-        android:layout_alignBottom="@+id/showMore1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/merlin"
+        android:layout_alignTop="@+id/showMore1"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/merlinLabel" />
 
     <ImageView
         android:id="@+id/percivalPic"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/percival"
-        android:layout_alignBottom="@+id/showMore2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/percival"
+        android:layout_alignTop="@+id/showMore2"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/percivalLabel" />
 
     <ImageView
         android:id="@+id/assassinPic"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/assassin"
-        android:layout_alignBottom="@+id/showMore3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/assassin"
+        android:layout_alignTop="@+id/showMore3"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/assassinLabel" />
 
     <ImageView
         android:id="@+id/mordredPic"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/mordred"
-        android:layout_alignBottom="@+id/showMore11"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/mordred"
+        android:layout_alignTop="@+id/showMore11"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/mordredLabel" />
 
     <ImageView
         android:id="@+id/morganaPic"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/morgana"
-        android:layout_alignBottom="@+id/showMore4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/morgana"
+        android:layout_alignTop="@+id/showMore4"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/morganaLabel" />
 
     <ImageView
         android:id="@+id/oberonPic"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/oberon"
-        android:layout_alignBottom="@+id/showMore5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/oberon"
+        android:layout_alignTop="@+id/showMore5"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/oberonLabel" />
 
     <ImageView
         android:id="@+id/badlancelotPic"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/badlancelot"
-        android:layout_alignBottom="@+id/showMore6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/badlancelot"
+        android:layout_alignTop="@+id/showMore6"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/lancelot1Label" />
 
     <ImageView
         android:id="@+id/goodlancelotPic"
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@drawable/goodlancelot"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/goodlancelot"
         android:layout_alignTop="@+id/badlancelotPic"
-        android:layout_toRightOf="@+id/badlancelotPic"
-        android:layout_marginRight="-10dp"
-        android:layout_toEndOf="@+id/badlancelotPic" />
+        android:layout_marginEnd="-10dp"
+        android:layout_toEndOf="@+id/badlancelotPic"
+        android:contentDescription="@string/lancelot2Label" />
 
     <TextView
         android:text="@string/merlinLabel"
@@ -144,8 +151,7 @@
         android:layout_height="45dp"
         android:id="@+id/merlinLabel"
         android:layout_alignTop="@+id/showMore1"
-        android:layout_toRightOf="@+id/merlinPic"
-        android:layout_toLeftOf="@+id/showMore1"
+        android:layout_toEndOf="@+id/merlinPic"
         android:layout_toStartOf="@+id/showMore1" />
 
     <TextView
@@ -157,8 +163,7 @@
         android:layout_height="45dp"
         android:id="@+id/percivalLabel"
         android:layout_alignTop="@+id/showMore2"
-        android:layout_toRightOf="@+id/percivalPic"
-        android:layout_toLeftOf="@+id/showMore1"
+        android:layout_toEndOf="@+id/percivalPic"
         android:layout_toStartOf="@+id/showMore1" />
 
     <TextView
@@ -170,8 +175,7 @@
         android:layout_height="45dp"
         android:id="@+id/assassinLabel"
         android:layout_alignTop="@+id/showMore3"
-        android:layout_toRightOf="@+id/merlinPic"
-        android:layout_toLeftOf="@+id/showMore1"
+        android:layout_toEndOf="@+id/merlinPic"
         android:layout_toStartOf="@+id/showMore1" />
 
     <TextView
@@ -183,8 +187,7 @@
         android:layout_height="45dp"
         android:id="@+id/mordredLabel"
         android:layout_alignTop="@+id/showMore11"
-        android:layout_toRightOf="@+id/merlinPic"
-        android:layout_toLeftOf="@+id/showMore1"
+        android:layout_toEndOf="@+id/merlinPic"
         android:layout_toStartOf="@+id/showMore1" />
 
     <TextView
@@ -196,9 +199,7 @@
         android:layout_height="45dp"
         android:id="@+id/morganaLabel"
         android:layout_alignTop="@+id/showMore4"
-        android:layout_toRightOf="@+id/morganaPic"
         android:layout_toEndOf="@+id/morganaPic"
-        android:layout_toLeftOf="@+id/showMore4"
         android:layout_toStartOf="@+id/showMore4" />
 
     <TextView
@@ -210,8 +211,7 @@
         android:layout_height="45dp"
         android:id="@+id/oberonLabel"
         android:layout_alignTop="@+id/showMore5"
-        android:layout_toRightOf="@+id/oberonPic"
-        android:layout_toLeftOf="@+id/showMore5"
+        android:layout_toEndOf="@+id/oberonPic"
         android:layout_toStartOf="@+id/showMore5" />
 
     <TextView
@@ -223,8 +223,7 @@
         android:layout_height="45dp"
         android:id="@+id/lancelot1Label"
         android:layout_alignTop="@+id/showMore6"
-        android:layout_toRightOf="@+id/goodlancelotPic"
-        android:layout_toLeftOf="@+id/showMore6"
+        android:layout_toEndOf="@+id/goodlancelotPic"
         android:layout_toStartOf="@+id/showMore6" />
 
     <ToggleButton
@@ -236,7 +235,6 @@
         android:background="@drawable/good_guy_rounded"
         android:layout_below="@+id/characterLabel"
         android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ToggleButton
@@ -248,7 +246,6 @@
         android:background="@drawable/good_guy_rounded"
         android:layout_below="@+id/merlinExplanation"
         android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ToggleButton
@@ -260,7 +257,6 @@
         android:background="@drawable/bad_guy_rounded"
         android:layout_below="@+id/percivalExplanation"
         android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ToggleButton
@@ -272,7 +268,6 @@
         android:background="@drawable/bad_guy_rounded"
         android:layout_below="@+id/assassinExplanation"
         android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ToggleButton
@@ -284,7 +279,6 @@
         android:background="@drawable/bad_guy_rounded"
         android:layout_below="@+id/mordredExplanation"
         android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ToggleButton
@@ -296,7 +290,6 @@
         android:background="@drawable/bad_guy_rounded"
         android:layout_below="@+id/morganaExplanation"
         android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ToggleButton
@@ -308,7 +301,6 @@
         android:background="@drawable/both_rounded"
         android:layout_below="@+id/oberonExplanation"
         android:layout_marginTop="20dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -321,7 +313,6 @@
         android:id="@+id/assassinExplanation"
         android:layout_below="@+id/assassinLabel"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -334,7 +325,6 @@
         android:id="@+id/mordredExplanation"
         android:layout_below="@+id/mordredLabel"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -347,7 +337,6 @@
         android:textAlignment="center"
         android:layout_below="@+id/morganaLabel"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -360,7 +349,6 @@
         android:textAlignment="center"
         android:layout_below="@+id/oberonLabel"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -373,7 +361,6 @@
         android:id="@+id/merlinExplanation"
         android:layout_below="@+id/merlinLabel"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -386,7 +373,6 @@
         android:textAlignment="center"
         android:layout_below="@+id/showMore6"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -399,26 +385,26 @@
         android:id="@+id/percivalExplanation"
         android:layout_below="@+id/showMore2"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ImageView
         android:id="@+id/yesVote"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/yesvote"
+        app:srcCompat="@drawable/yesvote"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/directionsLabel"/>
+        android:layout_below="@+id/directionsLabel"
+        android:contentDescription="@string/votingLabel" />
 
     <ImageView
         android:id="@+id/noVote"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_alignTop="@+id/yesVote"
-        android:src="@drawable/novote"
-        android:layout_toRightOf="@+id/yesVote"
-        android:layout_marginRight="-10dp"
-        android:layout_toEndOf="@+id/yesVote"/>
+        app:srcCompat="@drawable/novote"
+        android:layout_marginEnd="-10dp"
+        android:layout_toEndOf="@+id/yesVote"
+        android:contentDescription="@string/votingLabel" />
 
     <TextView
         android:text="@string/votingLabel"
@@ -429,8 +415,7 @@
         android:layout_height="45dp"
         android:id="@+id/votingLabel"
         android:layout_alignTop="@+id/showMore7"
-        android:layout_toRightOf="@+id/noVote"
-        android:layout_toLeftOf="@+id/showMore7"
+        android:layout_toEndOf="@+id/noVote"
         android:layout_toStartOf="@+id/showMore7" />
 
     <ToggleButton
@@ -441,7 +426,6 @@
         android:textOff="@string/showMore"
         android:background="@drawable/other_piece_color"
         android:layout_alignTop="@+id/yesVote"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -454,26 +438,26 @@
         android:id="@+id/votingExplanation"
         android:layout_below="@+id/showMore7"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ImageView
         android:id="@+id/missionSucceed"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/success"
+        app:srcCompat="@drawable/success"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/votingExplanation"/>
+        android:layout_below="@+id/votingExplanation"
+        android:contentDescription="@string/missionLabel" />
 
     <ImageView
         android:id="@+id/missionFail"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/fail"
+        app:srcCompat="@drawable/fail"
         android:layout_alignTop="@+id/missionSucceed"
-        android:layout_toRightOf="@+id/missionSucceed"
-        android:layout_marginRight="-10dp"
-        android:layout_toEndOf="@+id/missionSucceed"/>
+        android:layout_marginEnd="-10dp"
+        android:layout_toEndOf="@+id/missionSucceed"
+        android:contentDescription="@string/missionLabel" />
 
     <TextView
         android:text="@string/missionLabel"
@@ -484,8 +468,7 @@
         android:layout_height="45dp"
         android:id="@+id/missionLabel"
         android:layout_alignTop="@+id/showMore8"
-        android:layout_toRightOf="@+id/missionFail"
-        android:layout_toLeftOf="@+id/showMore8"
+        android:layout_toEndOf="@+id/missionFail"
         android:layout_toStartOf="@+id/showMore8" />
 
     <ToggleButton
@@ -509,16 +492,16 @@
         android:id="@+id/missionExplanation"
         android:layout_below="@+id/showMore8"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ImageView
         android:id="@+id/ladyOfTheLake"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/ladyofthelake"
+        app:srcCompat="@drawable/ladyofthelake"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/optionalStuff"/>
+        android:layout_below="@+id/optionalStuff"
+        android:contentDescription="@string/ladyLabel" />
 
     <TextView
         android:text="@string/ladyLabel"
@@ -529,8 +512,7 @@
         android:layout_height="45dp"
         android:id="@+id/ladyLabel"
         android:layout_alignTop="@+id/showMore9"
-        android:layout_toRightOf="@+id/ladyOfTheLake"
-        android:layout_toLeftOf="@+id/showMore9"
+        android:layout_toEndOf="@+id/ladyOfTheLake"
         android:layout_toStartOf="@+id/showMore9" />
 
     <ToggleButton
@@ -541,7 +523,6 @@
         android:textOff="@string/showMore"
         android:background="@drawable/other_piece_color"
         android:layout_alignTop="@+id/ladyOfTheLake"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -554,16 +535,16 @@
         android:textAlignment="center"
         android:layout_below="@+id/showMore9"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ImageView
         android:id="@+id/excalibur"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:src="@drawable/excalibur"
+        app:srcCompat="@drawable/excalibur"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/ladyExplanation"/>
+        android:layout_below="@+id/ladyExplanation"
+        android:contentDescription="@string/excaliburLabel" />
 
     <TextView
         android:text="@string/excaliburLabel"
@@ -574,8 +555,7 @@
         android:layout_height="45dp"
         android:id="@+id/excaliburLabel"
         android:layout_alignTop="@+id/showMore10"
-        android:layout_toRightOf="@+id/excalibur"
-        android:layout_toLeftOf="@+id/showMore10"
+        android:layout_toEndOf="@+id/excalibur"
         android:layout_toStartOf="@+id/showMore10" />
 
     <ToggleButton
@@ -586,7 +566,6 @@
         android:textOff="@string/showMore"
         android:background="@drawable/other_piece_color"
         android:layout_alignTop="@+id/excalibur"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
@@ -599,7 +578,6 @@
         android:textAlignment="center"
         android:layout_below="@+id/showMore10"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <!---->
